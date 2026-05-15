@@ -8,7 +8,7 @@
 
 ## Overview
 
-3GPP AI Document & Meeting Intelligence Platform 是一个面向标准化会议文稿与会议内容的 AI 工作台，能够将大量 3GPP TDoc 文稿和会议录音自动转化为结构化摘要、跨文稿对比报告和会议纪要，帮助用户更高效地理解复杂技术议题。
+3GPP AI Document & Meeting Intelligence Platform 是一个面向3GPP通信标准化会议文稿与会议内容的AI工作台，能够将大量3GPP TDoc文稿和会议录音自动转化为结构化摘要、跨文稿对比报告和会议纪要，帮助用户更高效地理解复杂技术议题。
 
 ---
 
@@ -183,7 +183,6 @@ flowchart TD
 | Job System | 负责长耗时任务的异步执行、状态跟踪、失败重试和结果持久化 |
 
 ---
-![Uploading image.png…]()
 
 ## Agent Workflow
 
