@@ -183,6 +183,7 @@ flowchart TD
 | Job System | 负责长耗时任务的异步执行、状态跟踪、失败重试和结果持久化 |
 
 ---
+![Uploading image.png…]()
 
 ## Agent Workflow
 
