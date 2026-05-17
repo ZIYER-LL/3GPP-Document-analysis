@@ -147,7 +147,6 @@ sequenceDiagram
 | `COMPLETED` | 任务完成 |
 | `FAILED` | 任务失败 |
 
-```
 ### Supported File Types
 
 | File Type | Support Status | Processing Tool |
@@ -169,14 +168,13 @@ sequenceDiagram
 
 ```mermaid
 flowchart LR
-    A[Audio / Video Upload] --> B[File Validation]
-    B --> C[ffmpeg / ffprobe]
-    C --> D[faster-whisper ASR]
-    D --> E[Timestamped Transcript]
-    E --> F[Local LLM]
-    F --> G[AI Meeting Minutes]
+    A["Audio / Video Upload"] --> B["File Validation"]
+    B --> C["ffmpeg / ffprobe"]
+    C --> D["faster-whisper ASR"]
+    D --> E["Timestamped Transcript"]
+    E --> F["Local LLM"]
+    F --> G["AI Meeting Minutes"]
 ```
-
 ### Stage 1: Transcription
 
 系统接收会议音频或视频文件，调用 `faster-whisper` 生成带时间戳的 transcript。
