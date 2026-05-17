@@ -131,7 +131,7 @@ sequenceDiagram
     R->>B: 保存任务结果
     B->>F: 前端轮询任务状态并展示结果
 ```
-
+---
 ### Task Stages
 
 | Stage | Description |
@@ -148,7 +148,7 @@ sequenceDiagram
 | `FAILED` | 任务失败 |
 
 ```
-
+---
 ### Supported File Types
 
 | File Type | Status | Tool |
