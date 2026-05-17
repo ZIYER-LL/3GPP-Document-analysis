@@ -262,26 +262,27 @@ cd 3GPP-Document-analysis
 
 ### 2. Start Backend
 
+```bash
 cd 3gpp-tdoc-backend
-
 pip install -r requirements.txt
-
 uvicorn app.main:app --host 0.0.0.0 --port 8000
+```
 
 ### 3. Start Model Service
 
+```bash
 cd model_service
-
 pip install -r requirements.txt
-
 uvicorn app:app --host 0.0.0.0 --port 9000
+```
 
 ### 4. Start Frontend
 
+```bash
 cd 3gpp-tdoc-frontend
-
 npm install
 npm run dev
+```
 
 ---
 
