@@ -148,25 +148,24 @@ sequenceDiagram
 | `FAILED` | 任务失败 |
 
 ```
----
 ### Supported File Types
 
-| File Type | Status | Tool |
+| File Type | Support Status | Processing Tool |
 |---|---|---|
-| `.xlsx` | Supported | openpyxl |
-| `.xlsm` | Supported | openpyxl |
-| `.zip` | Supported | zipfile |
-| Nested `.zip` | Supported | zipfile |
-| `.pdf` | Supported | PyMuPDF |
-| `.docx` | Supported | python-docx |
-| `.txt` | Supported | built-in text parser |
-| `.md` | Supported | built-in text parser |
+| `.xlsx` | Supported | `openpyxl` |
+| `.xlsm` | Supported | `openpyxl` |
+| `.zip` | Supported | `zipfile` |
+| Nested `.zip` | Supported | `zipfile` |
+| `.pdf` | Supported | `PyMuPDF` |
+| `.docx` | Supported | `python-docx` |
+| `.txt` | Supported | Built-in text parser |
+| `.md` | Supported | Built-in text parser |
 
 ---
 
 ## Meeting Intelligence Pipeline
 
-会议智能模块采用 “ASR 转写 + LLM 纪要生成” 的两阶段流水线。
+会议智能模块采用 **ASR 转写 + LLM 纪要生成** 的两阶段流水线，将会议音频或视频文件转化为带时间戳的 transcript，并进一步生成结构化 AI 会议纪要。
 
 ```mermaid
 flowchart LR
