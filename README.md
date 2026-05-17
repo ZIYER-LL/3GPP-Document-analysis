@@ -259,94 +259,32 @@ flowchart LR
 ### 1. Clone Repository
 
 ```bash
-git clone <TODO: your-repository-url>
-cd <TODO: your-repository-name>
+git clone git@github.com:ZIYER-LL/3GPP-Document-analysis.git
+cd 3GPP-Document-analysis
 ```
 
 ### 2. Start Backend
 
-```bash
 cd 3gpp-tdoc-backend
-
-python -m venv .venv
-source .venv/bin/activate
 
 pip install -r requirements.txt
 
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-```
-
-Backend will be available at:
-
-```text
-http://localhost:8000
-```
-
-API docs:
-
-```text
-http://localhost:8000/docs
-```
+uvicorn app.main:app --host 0.0.0.0 --port 8000
 
 ### 3. Start Model Service
 
-```bash
 cd model_service
-
-python -m venv .venv
-source .venv/bin/activate
 
 pip install -r requirements.txt
 
-python app.py
-```
-
-Model service will be available at:
-
-```text
-http://localhost:TODO
-```
-
-> TODO: 补充模型服务端口，例如 `8001`、`9000` 等。
+uvicorn app:app --host 0.0.0.0 --port 9000
 
 ### 4. Start Frontend
 
-```bash
 cd 3gpp-tdoc-frontend
 
 npm install
 npm run dev
-```
-
-Frontend will be available at:
-
-```text
-http://localhost:3000
-```
-
-### 5. Environment Variables
-
-Backend `.env` example:
-
-```env
-DATABASE_URL=sqlite:///./data/app.db
-UPLOAD_DIR=./uploads
-DOWNLOAD_DIR=./downloads
-MODEL_SERVICE_URL=http://localhost:TODO
-REQUEST_TIMEOUT_SECONDS=TODO
-MAX_RETRY_TIMES=TODO
-```
-
-Model Service `.env` example:
-
-```env
-MODEL_NAME_OR_PATH=TODO
-DEVICE=cuda
-DTYPE=auto
-MAX_NEW_TOKENS=TODO
-```
-
-> TODO: 根据项目真实配置补充 `.env.example`。
 
 ---
 
