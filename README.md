@@ -1,4 +1,4 @@
-# 3GPP AI Document & Meeting Intelligence Platform
+# 3GPP AI Document & Meeting Intelligence Platform——v1.0
 
 一个面向 **3GPP TDoc 文稿分析、跨文稿对比、会议转写与 AI 纪要生成** 的全栈 AI 工程项目。
 
